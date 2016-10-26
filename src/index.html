@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.deep_purple-pink.min.css">
     <link rel="stylesheet" href="styles.css">
-    <style>
+    <style type="text/css">
         #view-source {
             position: fixed;
             display: block;
@@ -42,6 +42,9 @@
             margin-right: 40px;
             margin-bottom: 40px;
             z-index: 900;
+        }
+        .mdl-textfield{
+            width: 70%;
         }
     </style>
 </head>
@@ -71,18 +74,19 @@
             <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
                 <div class="mdl-card mdl-cell mdl-cell--12-col">
                     <div class="mdl-card__supporting-text">
-                        <h4>Question</h4>
-
                         <form action="#" class="question_form">
-                            <div class="mdl-textfield mdl-js-textfield">
-                                <input class="mdl-textfield__input" type="text" id="sample6">
-                                <label class="mdl-textfield__label" for="sample6">Ask Me...</label>
-                            </div>
-                            <label class="mdl-button mdl-js-button" for="sample6">
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
-                                    ASK
-                                </button>
-                            </label>
+                            <div class="mdl-typography--text-center">
+                                <h4>Question</h4>
+                                <div class="mdl-textfield mdl-js-textfield is-upgraded">
+                                    <input class="mdl-textfield__input" type="text" id="sample6">
+                                    <label class="mdl-textfield__label" for="sample6">Ask Me...</label>
+                                </div>
+                                <label class="mdl-button mdl-js-button" for="sample6">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                                        ASK
+                                    </button>
+                                </label>    
+                            </div>     
                             <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="switch-1">
                                 <span class="mdl-switch__label">Show Intermediate Processing Information</span>
                                 <input type="checkbox" id="switch-1" class="mdl-switch__input">
